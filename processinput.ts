@@ -42,7 +42,7 @@ export function process_input(): Array<person> {
         }
 
         console.log(" ")
-        option = prompt("Write STOP to quit or press ENTER to continue adding people: ")!;
+        option = prompt("Write STOP to quit (and make the goroups) or press ENTER to continue adding people: ")!;
         console.log(" ")
         const big_option = option.toUpperCase();
         option = big_option;
