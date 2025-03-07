@@ -1,6 +1,6 @@
 import { lg_new, ListGraph } from "./lib/graphs";
 import { list } from "./lib/list";
-import { person } from "./groupsort";
+import { type person } from "./groupsort";
 
 /**
  * Makes a ListGraph from array of people
