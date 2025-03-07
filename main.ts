@@ -1,7 +1,7 @@
 import { make_list_graph } from "./makelistgraph";
 import { divide_if_too_many } from "./divide";
 import { process_input, display_groups } from "./processinput";
-import { split_group_if_to_big, bfs_groups } from "./Tyra_project";
+import { split_group_if_to_big, bfs_groups } from "./bfs_split_groups";
 import * as PromptSync from "prompt-sync";
 
 
