@@ -1,6 +1,6 @@
-import { make_list_graph } from "./matilda_project";
-import { divide_if_too_many } from "./divide_if_too_many";
-import { process_input, display_groups } from "./engla_project";
+import { make_list_graph } from "./makelistgraph";
+import { divide_if_too_many } from "./divide";
+import { process_input, display_groups } from "./processinput";
 import { split_group_if_to_big, bfs_groups } from "./Tyra_project";
 import * as PromptSync from "prompt-sync";
 
