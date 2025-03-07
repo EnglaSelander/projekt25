@@ -1,5 +1,5 @@
 
-import { split_group_if_to_big } from "./Tyra_project";
+import { split_group_if_to_big } from "./bfs_split_groups";
 /**
  * 
  * @param groups grupperna
@@ -69,21 +69,3 @@ export function find_smallest(groups: number[][]) {
     }
     return {index: current_small_index, group: groups[current_small_index]};
 }
-
-
-//tester här för testfilen strular??
-/*
-let grupper = [[0], [1,2], [3,4]];
-
-const grn = 2;
-const mgs = Math.ceil(grupper.length / grn );
-console.log(divide_if_too_many(grupper, grn, mgs));*/
-/*
-const grps = [[9], [1,2,3], [4,5], [6,7,8], [10,11,12]];
-console.log(divide_if_too_many(grps, grn, mgs));
-
-const grps2 = [[1,2], [4,5], [6,7,8], [9], [10,11,12], [13]];
-console.log(divide_if_too_many(grps2, grn, mgs));
-
-const grps4 = [[1,2], [3,12], [4,5], [6,7], [8,9], [10,11]];
-console.log(divide_if_too_many(grps4, grn, mgs));*/
