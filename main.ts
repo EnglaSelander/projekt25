@@ -20,7 +20,7 @@ function main_loop() {
         num_groups_string = prompt("How many groups should there be? ");
         num_groups = parseInt(num_groups_string!, 10);
     }
-
+    console.log(" ");
     const person_array = process_input();
 
     const group_graph = make_list_graph(person_array);
