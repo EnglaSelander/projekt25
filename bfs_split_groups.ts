@@ -1,12 +1,12 @@
 import { ListGraph, lg_bfs_visit_order} from "../lib/graphs";
 import { List } from "../lib/list";
-import { ph_empty, ProbingHashtable } from "../lib/hashtables";
-import { empty, dequeue, enqueue, is_empty, head, Prio_Queue} from "./lib/prio_queue";
-import { Queue } from "../lib/queue_array";
+//import { ph_empty, ProbingHashtable } from "../lib/hashtables";
+//import { empty, dequeue, enqueue, is_empty, head, Prio_Queue} from "./lib/prio_queue";
+//import { Queue } from "../lib/queue_array";
 
-import * as PromptSync from "prompt-sync";
-import { divide_if_too_many } from "./divide_if_too_many";
-import { display_groups } from "./engla_project";
+//import * as PromptSync from "prompt-sync";
+//import { divide_if_too_many } from "./divide_if_too_many";
+//import { display_groups } from "./engla_project";
 
 /**
  * A graph in edge lists representation is
