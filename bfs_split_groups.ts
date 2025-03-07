@@ -128,9 +128,9 @@ const exampleGraph: ListGraph = {
     size: 6
 };
 
-console.log(bfs_groups(exampleGraph));
+/* console.log(bfs_groups(exampleGraph));
 console.log(main_divide_into_groups(exampleGraph, 3));
 console.log(lg_bfs_visit_order(exampleGraph, 0));
 console.log(lg_bfs_visit_order(exampleGraph, 2));
 
-console.log(merge_bfs_groups(bfs_groups(exampleGraph)));
+console.log(merge_bfs_groups(bfs_groups(exampleGraph))); */
