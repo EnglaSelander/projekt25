@@ -1,4 +1,4 @@
-import { person } from "./groupsort";
+import { type person } from "./groupsort";
 import * as PromptSync from "prompt-sync";
 
 const prompt: PromptSync.Prompt = PromptSync({ sigint: true });
