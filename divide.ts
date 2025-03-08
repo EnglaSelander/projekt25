@@ -2,10 +2,10 @@
 import { split_group_if_to_big } from "./bfs_split_groups";
 /**
  * 
- * @param groups grupperna
- * @param number_of_groups antal grupper det får vara
- * @param max_group_size maxantal i en grupp
- * @returns rätt antal grupper där alltså folk har shiftats runt
+ * @param groups an array of groups
+ * @param number_of_groups the number of groups
+ * @param max_group_size the maximum size of a group
+ * @returns an array of groups of the right length
  */
 export function divide_if_too_many(groups: number[][], number_of_groups: number, max_group_size: number): number[][] {
 
@@ -42,7 +42,7 @@ export function divide_if_too_many(groups: number[][], number_of_groups: number,
             }
         }
         if (merged === false) { 
-            const new_max_size = Math.ceil(smallest_group.length/2);
+            const new_max_size = Math.ceil(smallest_group.length/2);    
             const split_groups = split_group_if_to_big(smallest_group, new_max_size);
             let new_group_array = [...groups_new, ...split_groups];
             groups_new = new_group_array;
@@ -55,7 +55,7 @@ export function divide_if_too_many(groups: number[][], number_of_groups: number,
 
 /**
  * @param groups array av grupper
- * @returns ett par(obs inte par men ja) av ett index och en grupp, den första minsta gruppen av grupperna
+ * @returns an object with two properties, an index (the index of the firstcoming smallest group) and a group (the smallest group)
  */
 export function find_smallest(groups: number[][]) {
     let current_small = groups[0].length;
