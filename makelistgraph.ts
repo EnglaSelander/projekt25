@@ -7,7 +7,7 @@ import { type person } from "./groupsort";
  * @param arr array of type person
  * @returns ListGraph of the connections between a person and their friend
  */
-export function make_list_graph2(arr: Array<person>): ListGraph {
+export function make_list_graph(arr: Array<person>): ListGraph {
     const len = arr.length;
     let peoplegraph = {adj: Array(len).fill(null), size: len};
 
