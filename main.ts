@@ -1,7 +1,7 @@
 import { make_list_graph } from "./makelistgraph";
 import { divide_if_too_many } from "./divide";
 import { process_input, display_groups } from "./processinput";
-import { split_group_if_to_big, bfs_groups } from "./bfs_split_groups";
+import { split_group_if_too_big, bfs_groups } from "./bfs_split_groups";
 import * as PromptSync from "prompt-sync";
 
 
@@ -33,7 +33,7 @@ function main_loop() {
     const split_group_result: number[][] = []; 
 
     for (let group of BFS_groups) {
-        const split_groups = split_group_if_to_big(group, max_group_size); 
+        const split_groups = split_group_if_too_big(group, max_group_size); 
         split_group_result.push(...split_groups);
     }
     console.log(split_group_result);
