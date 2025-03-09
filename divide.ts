@@ -1,5 +1,5 @@
 
-import { split_group_if_to_big } from "./bfs_split_groups";
+import { split_group_if_too_big } from "./bfs_split_groups";
 /**
  * 
  * @param groups an array of groups
@@ -43,7 +43,7 @@ export function divide_if_too_many(groups: number[][], number_of_groups: number,
         }
         if (merged === false) { 
             const new_max_size = Math.ceil(smallest_group.length/2);    
-            const split_groups = split_group_if_to_big(smallest_group, new_max_size);
+            const split_groups = split_group_if_too_big(smallest_group, new_max_size);
             let new_group_array = [...groups_new, ...split_groups];
             groups_new = new_group_array;
         }
