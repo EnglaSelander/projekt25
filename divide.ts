@@ -36,7 +36,7 @@ export function divide_if_too_many(groups: number[][], number_of_groups: number,
 
         for(let i = 0; i < groups_new.length; i = i + 1) {
             if ((groups_new[i].length + smallest_group.length) <= max_group_size) { //if the smallest group can be merged with existing group
-                groups_new[i] = [...smallest_group, ...groups_new[i]];
+                groups_new[i] = [...groups_new[i], ...smallest_group];
                 merged = true;
                 break;          
             }
